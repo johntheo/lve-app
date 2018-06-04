@@ -9,6 +9,12 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+// Import Froala Editor.
+import "froala-editor/js/froala_editor.pkgd.min.js";
+
+// Import Angular2 plugin.
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,6 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    FroalaEditorModule.forRoot(), 
+    FroalaViewModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
