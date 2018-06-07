@@ -7,4 +7,3 @@ window["$"] = $;
 window["jQuery"] = $;
 
 platformBrowserDynamic().bootstrapModule(AppModule);
-
